@@ -5,24 +5,24 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // --- Mobile Nav Toggle ---
-  const toggle = document.querySelector('.nav__toggle');
-  const links = document.querySelector('.nav__links');
-  if (toggle && links) {
+  const toggle = document.querySelector('.nav-toggle');
+  const navCenter = document.querySelector('.nav-center');
+  if (toggle && navCenter) {
     toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
+      navCenter.classList.toggle('open');
       toggle.classList.toggle('active');
     });
     // Close on link click
-    links.querySelectorAll('a').forEach(a => {
+    navCenter.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        links.classList.remove('open');
+        navCenter.classList.remove('open');
         toggle.classList.remove('active');
       });
     });
   }
 
   // --- Sticky Nav Shadow ---
-  const nav = document.querySelector('.nav');
+  const nav = document.querySelector('nav');
   if (nav) {
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Active Nav Link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav__link').forEach(link => {
+  document.querySelectorAll('.nav-center a').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       link.classList.add('active');
@@ -39,27 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- FAQ Accordion ---
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const answer = item.querySelector('.faq-answer');
+  document.querySelectorAll('.faq-question-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const item = row.closest('.faq-item');
       const isOpen = item.classList.contains('active');
 
       // Close all others
       document.querySelectorAll('.faq-item.active').forEach(open => {
-        if (open !== item) {
-          open.classList.remove('active');
-          open.querySelector('.faq-answer').style.maxHeight = null;
-        }
+        if (open !== item) open.classList.remove('active');
       });
 
-      if (isOpen) {
-        item.classList.remove('active');
-        answer.style.maxHeight = null;
-      } else {
-        item.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
+      // Toggle clicked item
+      item.classList.toggle('active', !isOpen);
     });
   });
 
@@ -78,12 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Scroll Animations (Intersection Observer) ---
-  const animEls = document.querySelectorAll('.fade-in');
+  const animEls = document.querySelectorAll('.fade-up');
   if (animEls.length && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });

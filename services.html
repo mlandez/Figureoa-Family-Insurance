@@ -7,30 +7,34 @@
   <meta name="description" content="Explore our underwritten health insurance plans — Essential, Premier, and Family. Lower premiums, $0 copays, and nationwide PPO access.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAV (same on all pages) -->
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <div class="nav__logo-icon">FF</div>
-        <div class="nav__logo-text">Figueroa Family<span>Insurance</span></div>
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="index.html" style="display:flex;align-items:center;gap:16px;">
+        <div class="nav-logo">FF</div>
+        <div class="nav-brand">
+          <span class="nav-brand-name">Figueroa Family</span>
+          <span class="nav-brand-sub">Insurance</span>
+        </div>
       </a>
-      <div class="nav__links">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="services.html" class="nav__link">Services</a>
-        <a href="about.html" class="nav__link">About</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="faq.html" class="nav__link">FAQ</a>
-        <a href="careers.html" class="nav__link">Careers</a>
-        <a href="contact.html" class="nav__link">Contact</a>
-        <a href="contact.html" class="btn btn--primary nav__cta">Get a Free Quote</a>
-      </div>
-      <button class="nav__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:8132709076" class="nav-phone">(813) 270-9076</a>
+      <a href="contact.html" class="nav-cta">Get a Free Quote</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -40,45 +44,43 @@
   </section>
 
   <!-- WHAT WE OFFER -->
-  <section class="section">
+  <section class="section svc-offer-section">
     <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-label">What we offer</div>
-        <h2>Health-based plans that work for you.</h2>
-        <p>Our plans use medical underwriting to assess your individual health profile, then match you with coverage that reflects your actual risk — not the general population's.</p>
-      </div>
+      <div class="section-label fade-up">What we offer</div>
+      <h2 class="section-title fade-up">Health-based plans that work for you.</h2>
+      <p class="section-sub fade-up">Our plans use medical underwriting to assess your individual health profile, then match you with coverage that reflects your actual risk — not the general population's.</p>
 
-      <div class="comparison" style="margin-bottom: 60px;">
-        <div class="comparison__card comparison__card--solution fade-in">
-          <h3 style="margin-bottom: 20px; font-size: 1.1rem;">How Underwriting Works</h3>
-          <p style="font-size: 0.95rem; color: var(--text-body); line-height: 1.7; margin-bottom: 16px;">When you apply, we evaluate your health history through a simple assessment. No invasive exams or lengthy medical records required. Based on your health profile, we match you with the plan tier that offers the best combination of premiums and coverage.</p>
-          <p style="font-size: 0.95rem; color: var(--text-body); line-height: 1.7;">The healthier you are, the more you save. It's that simple.</p>
+      <div class="comparison-grid" style="margin-bottom: 60px;">
+        <div class="comparison-card solution fade-up">
+          <h3>How Underwriting Works</h3>
+          <p style="font-size: 15px; color: rgba(255, 255, 255, 0.75); line-height: 1.7; margin-bottom: 16px; font-weight: 300;">When you apply, we evaluate your health history through a simple assessment. No invasive exams or lengthy medical records required. Based on your health profile, we match you with the plan tier that offers the best combination of premiums and coverage.</p>
+          <p style="font-size: 15px; color: rgba(255, 255, 255, 0.9); line-height: 1.7; font-weight: 300;">The healthier you are, the more you save. It's that simple.</p>
         </div>
-        <div class="comparison__card comparison__card--solution fade-in" style="background: #fff; border-color: var(--border-light);">
-          <h3 style="margin-bottom: 20px; font-size: 1.1rem;">What's Included</h3>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>Nationwide PPO network access</span>
+        <div class="comparison-card solution fade-up" style="background: var(--warm-white); border-color: var(--warm-gray);">
+          <h3 style="color: var(--text-dark);">What's Included</h3>
+          <div class="comparison-item">
+            <div class="comparison-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">Nationwide PPO network access</p>
           </div>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>$0 copays on covered services</span>
+          <div class="comparison-item">
+            <div class="comparison-icon" style="background: rgba(201, 168, 76, 0.1);"><svg viewBox="0 0 24 24" style="stroke: var(--gold);"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">$0 copays on covered services</p>
           </div>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>Low to $0 deductible options</span>
+          <div class="comparison-item">
+            <div class="comparison-icon" style="background: rgba(201, 168, 76, 0.1);"><svg viewBox="0 0 24 24" style="stroke: var(--gold);"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">Low to $0 deductible options</p>
           </div>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>Prescription drug coverage</span>
+          <div class="comparison-item">
+            <div class="comparison-icon" style="background: rgba(201, 168, 76, 0.1);"><svg viewBox="0 0 24 24" style="stroke: var(--gold);"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">Prescription drug coverage</p>
           </div>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>Preventive care included</span>
+          <div class="comparison-item">
+            <div class="comparison-icon" style="background: rgba(201, 168, 76, 0.1);"><svg viewBox="0 0 24 24" style="stroke: var(--gold);"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">Preventive care included</p>
           </div>
-          <div class="comparison__item">
-            <div class="comparison__icon--check">&#10003;</div>
-            <span>Telehealth access</span>
+          <div class="comparison-item">
+            <div class="comparison-icon" style="background: rgba(201, 168, 76, 0.1);"><svg viewBox="0 0 24 24" style="stroke: var(--gold);"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p style="color: var(--text-muted);">Telehealth access</p>
           </div>
         </div>
       </div>
@@ -86,17 +88,14 @@
   </section>
 
   <!-- PRICING CARDS -->
-  <section class="section section--sand" id="plans">
+  <section class="section svc-pricing-section" id="plans">
     <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-label">Our Plans</div>
-        <h2>Choose the plan that fits your life.</h2>
-        <p>Every plan includes nationwide PPO access and $0 copays. The right plan for you depends on your health profile, family size, and coverage needs.</p>
-      </div>
+      <div class="section-label fade-up">Our Plans</div>
+      <h2 class="section-title fade-up">Choose the plan that fits your life.</h2>
+      <p class="section-sub fade-up">Every plan includes nationwide PPO access and $0 copays. The right plan for you depends on your health profile, family size, and coverage needs.</p>
 
       <div class="pricing-grid">
-        <!-- Essential -->
-        <div class="pricing-card fade-in">
+        <div class="pricing-card fade-up">
           <div class="pricing-card__tier">Essential</div>
           <div class="pricing-card__price">Personalized <span>/ month</span></div>
           <p class="pricing-card__desc">Core coverage for healthy individuals looking for affordable, quality insurance.</p>
@@ -123,11 +122,10 @@
               Telehealth Access
             </div>
           </div>
-          <a href="contact.html" class="btn btn--outline" style="width: 100%;">Get a Quote</a>
+          <a href="contact.html" class="btn-outline" style="width: 100%; justify-content: center;">Get a Quote</a>
         </div>
 
-        <!-- Premier -->
-        <div class="pricing-card pricing-card--featured fade-in">
+        <div class="pricing-card pricing-card--featured fade-up">
           <div class="pricing-card__badge">Most Popular</div>
           <div class="pricing-card__tier">Premier</div>
           <div class="pricing-card__price">Personalized <span>/ month</span></div>
@@ -159,11 +157,10 @@
               Telehealth Access
             </div>
           </div>
-          <a href="contact.html" class="btn btn--primary" style="width: 100%;">Get a Quote</a>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">Get a Quote</a>
         </div>
 
-        <!-- Family -->
-        <div class="pricing-card fade-in">
+        <div class="pricing-card fade-up">
           <div class="pricing-card__tier">Family</div>
           <div class="pricing-card__price">Personalized <span>/ month</span></div>
           <p class="pricing-card__desc">Comprehensive family coverage including pediatric and maternity benefits.</p>
@@ -194,24 +191,22 @@
               Telehealth Access
             </div>
           </div>
-          <a href="contact.html" class="btn btn--outline" style="width: 100%;">Get a Quote</a>
+          <a href="contact.html" class="btn-outline" style="width: 100%; justify-content: center;">Get a Quote</a>
         </div>
       </div>
 
-      <p class="disclaimer" style="margin-top: 32px;">Plan pricing is personalized based on your individual health assessment. Contact us for a free, no-obligation quote tailored to your health profile.</p>
+      <p class="pricing-note">Plan pricing is personalized based on your individual health assessment. Contact us for a free, no-obligation quote tailored to your health profile.</p>
     </div>
   </section>
 
   <!-- ELIGIBILITY -->
-  <section class="section">
+  <section class="section svc-eligibility-section" style="padding: 80px 60px;">
     <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-label">Who qualifies</div>
-        <h2>See if you're eligible.</h2>
-        <p>Our underwritten plans are designed for generally healthy individuals. Here's a quick checklist to see if you may qualify.</p>
-      </div>
+      <div class="section-label fade-up">Who qualifies</div>
+      <h2 class="section-title fade-up">See if you're eligible.</h2>
+      <p class="section-sub fade-up" style="margin-bottom: 36px;">Our underwritten plans are designed for generally healthy individuals. Here's a quick checklist to see if you may qualify.</p>
 
-      <div class="checklist fade-in">
+      <div class="checklist fade-up" style="padding: 32px 36px;">
         <div class="checklist__item">
           <div class="checklist__check">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
@@ -243,123 +238,91 @@
           Looking for an alternative to ACA marketplace plans
         </div>
       </div>
-      <p class="disclaimer" style="margin-top: 24px;">*Eligibility is determined during the underwriting process. Pre-existing condition criteria vary by plan and carrier. Contact us to discuss your specific situation — we may still have options for you.</p>
+      <p class="eligibility-note fade-up">*Eligibility is determined during the underwriting process. Pre-existing condition criteria vary by plan and carrier.</p>
+      <p class="eligibility-cta fade-up">Not sure if you qualify? We'll figure it out together during your free consultation. <a href="contact.html">Schedule a call &rarr;</a></p>
     </div>
   </section>
+
+  <div class="section-divider"><span></span></div>
 
   <!-- NETWORK -->
-  <section class="section section--sand">
+  <section class="section svc-network-section">
     <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-label">Our network</div>
-        <h2>Nationwide PPO coverage.</h2>
-        <p>Access medical care anywhere in the country with our extensive PPO network. No referrals needed. See any in-network provider you choose.</p>
-      </div>
-      <div class="services-numbered">
-        <div class="service-num fade-in">
-          <div class="service-num__number">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <div class="section-label fade-up">Our network</div>
+      <h2 class="section-title fade-up">Nationwide PPO coverage.</h2>
+      <p class="section-sub fade-up">Access medical care anywhere in the country with our extensive PPO network. No referrals needed. See any in-network provider you choose.</p>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-number" style="font-size: 0;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <div class="service-num__title">See Any Provider</div>
-          <p class="service-num__text">PPO plans let you visit any in-network doctor, specialist, or hospital without a referral. Your choice, always.</p>
+          <h3>See Any Provider</h3>
+          <p>PPO plans let you visit any in-network doctor, specialist, or hospital without a referral. Your choice, always.</p>
         </div>
-        <div class="service-num fade-in">
-          <div class="service-num__number">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-number" style="font-size: 0;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <div class="service-num__title">Coverage in All 50 States</div>
-          <p class="service-num__text">Travel, relocate, or live anywhere in the country — your coverage travels with you. No network boundary restrictions.</p>
+          <h3>Coverage in All 50 States</h3>
+          <p>Travel, relocate, or live anywhere in the country — your coverage travels with you. No network boundary restrictions.</p>
         </div>
-        <div class="service-num fade-in">
-          <div class="service-num__number">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-number" style="font-size: 0;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <div class="service-num__title">No Surprise Bills</div>
-          <p class="service-num__text">With $0 copays and low deductibles, you know exactly what your costs are before you walk into the doctor's office.</p>
+          <h3>No Surprise Bills</h3>
+          <p>With $0 copays and low deductibles, you know exactly what your costs are before you walk into the doctor's office.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ PREVIEW -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-label">Common questions</div>
-        <h2>Frequently asked questions.</h2>
-      </div>
-      <div class="faq-list fade-in">
-        <div class="faq-item">
-          <button class="faq-question">
-            What is underwritten health insurance?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer__content">Underwritten health insurance evaluates your individual health profile to determine your premium. Unlike ACA marketplace plans that charge the same rate regardless of health status, underwritten plans can offer significantly lower premiums to individuals who are in good health. This rewards healthy lifestyles with tangible savings.</div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            How much can I save compared to marketplace plans?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer__content">Savings vary based on your age, health profile, location, and plan selection. Many of our clients see savings of 20% to 40% compared to equivalent ACA marketplace premiums. During your free consultation, we'll provide a personalized comparison so you can see exactly what your options look like.</div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            Are pre-existing conditions covered?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer__content">Underwritten plans are designed for generally healthy individuals. Pre-existing condition criteria vary by plan and carrier — some conditions may be covered after a waiting period, while others may affect eligibility. We encourage you to schedule a free consultation so we can review your specific situation and find the best options available to you.</div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="faq.html" class="btn btn--outline">View All FAQs</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BANNER -->
-  <section style="padding: 20px 0 80px;">
+  <!-- CTA -->
+  <section class="cta-wrapper">
     <div class="cta-banner">
       <h2>Find out what you could save.</h2>
       <p>Free, personalized quote based on your health profile. No obligation.</p>
-      <a href="contact.html" class="btn btn--white">Get a Free Quote</a>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative;">
+        <a href="contact.html" class="btn-white">Get a Free Quote</a>
+      </div>
       <div class="cta-banner__phone">Or call us: <a href="tel:8132709076">(813) 270-9076</a></div>
     </div>
   </section>
 
-  <!-- FOOTER (same on all pages) -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div>
-          <div class="footer__brand-name">Figueroa Family Insurance</div>
-          <p class="footer__brand-desc">Veteran-owned health insurance advisory helping individuals and families access underwritten plans with lower premiums, better coverage, and nationwide PPO access. A DBA of O7Carrera LLC.</p>
-          <div class="footer__social">
-            <a href="https://instagram.com/figshealthinsurance" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
-            <a href="https://www.facebook.com/dalifigueroa" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <div class="footer__heading">Navigate</div>
-          <ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
-        </div>
-        <div>
-          <div class="footer__heading">Contact</div>
-          <div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:8132709076" style="color:var(--bg-khaki);font-weight:600;">(813) 270-9076</a></div>
-          <div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:Figshealthinsurance@gmail.com" style="color:var(--bg-khaki);font-weight:600;">Figshealthinsurance@gmail.com</a></div>
-          <div style="margin-top:20px;"><div class="footer__heading">Legal</div><ul class="footer__links"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Figueroa Family Insurance</h3>
+        <p>Veteran-owned health insurance advisory helping individuals and families access underwritten plans with lower premiums, better coverage, and nationwide PPO access. A DBA of O7Carrera LLC.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/figshealthinsurance" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+          <a href="https://www.facebook.com/dalifigueroa" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>&copy; 2026 Figueroa Family Insurance. A DBA of O7Carrera LLC.</span>
-        <span>Created by <a href="https://onyxxmediagroup.com" style="color:var(--brass-light);">Onyxx Media Group</a></span>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
       </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:8132709076">(813) 270-9076</a>
+        <a href="mailto:Figshealthinsurance@gmail.com">Figshealthinsurance@gmail.com</a>
+        <span style="display:block;padding:5px 0;font-size:14px;font-weight:300;">Odessa, FL 33556</span>
+        <div style="margin-top:20px;">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Figueroa Family Insurance. A DBA of O7Carrera LLC.</span>
+      <span>Created by <a href="https://onyxxmediagroup.com" style="color:var(--gold);">Onyxx Media Group</a></span>
     </div>
   </footer>
   <script src="js/main.js"></script>

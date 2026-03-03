@@ -6,18 +6,34 @@
   <title>Terms of Service | Figueroa Family Insurance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .legal-content { max-width: 760px; margin: 0 auto; }
-    .legal-content h3 { margin-top: 32px; margin-bottom: 12px; font-size: 1.2rem; }
-    .legal-content p, .legal-content li { font-size: 0.95rem; line-height: 1.8; color: var(--text-body); }
-    .legal-content ul { padding-left: 24px; margin-bottom: 16px; }
-    .legal-content ul li { list-style: disc; margin-bottom: 8px; }
-  </style>
 </head>
 <body>
-  <nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__logo"><div class="nav__logo-icon">FF</div><div class="nav__logo-text">Figueroa Family<span>Insurance</span></div></a><div class="nav__links"><a href="index.html" class="nav__link">Home</a><a href="services.html" class="nav__link">Services</a><a href="about.html" class="nav__link">About</a><a href="blog.html" class="nav__link">Blog</a><a href="faq.html" class="nav__link">FAQ</a><a href="careers.html" class="nav__link">Careers</a><a href="contact.html" class="nav__link">Contact</a><a href="contact.html" class="btn btn--primary nav__cta">Get a Free Quote</a></div><button class="nav__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></nav>
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="index.html" style="display:flex;align-items:center;gap:16px;">
+        <div class="nav-logo">FF</div>
+        <div class="nav-brand">
+          <span class="nav-brand-name">Figueroa Family</span>
+          <span class="nav-brand-sub">Insurance</span>
+        </div>
+      </a>
+    </div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:8132709076" class="nav-phone">(813) 270-9076</a>
+      <a href="contact.html" class="nav-cta">Get a Free Quote</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
 
   <section class="page-hero">
     <h1>Terms of Service</h1>
@@ -63,7 +79,7 @@
         <p>Our website may contain links to third-party websites or services. We are not responsible for the content, privacy practices, or availability of these external sites.</p>
 
         <h3>Privacy</h3>
-        <p>Your use of our website is also governed by our <a href="privacy.html" style="color: var(--od-green); font-weight: 600;">Privacy Policy</a>, which describes how we collect, use, and protect your information.</p>
+        <p>Your use of our website is also governed by our <a href="privacy.html" style="color: var(--sage); font-weight: 600;">Privacy Policy</a>, which describes how we collect, use, and protect your information.</p>
 
         <h3>Governing Law</h3>
         <p>These Terms are governed by the laws of the State of Florida, without regard to conflict of law provisions. Any disputes arising from these Terms shall be resolved in the courts of Hillsborough County, Florida.</p>
@@ -75,13 +91,48 @@
         <p>If you have questions about these Terms, please contact us:</p>
         <p><strong>Figueroa Family Insurance</strong> (DBA of O7Carrera LLC)<br>
         4633 Night Star Trail, Odessa, FL 33556<br>
-        Phone: <a href="tel:8132709076" style="color: var(--od-green);">(813) 270-9076</a><br>
-        Email: <a href="mailto:Figshealthinsurance@gmail.com" style="color: var(--od-green);">Figshealthinsurance@gmail.com</a></p>
+        Phone: <a href="tel:8132709076" style="color: var(--sage);">(813) 270-9076</a><br>
+        Email: <a href="mailto:Figshealthinsurance@gmail.com" style="color: var(--sage);">Figshealthinsurance@gmail.com</a></p>
       </div>
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer__inner"><div><div class="footer__brand-name">Figueroa Family Insurance</div><p class="footer__brand-desc">Veteran-owned health insurance advisory. A DBA of O7Carrera LLC.</p></div><div><div class="footer__heading">Navigate</div><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><div class="footer__heading">Contact</div><div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:8132709076" style="color:var(--bg-khaki);font-weight:600;">(813) 270-9076</a></div><div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:Figshealthinsurance@gmail.com" style="color:var(--bg-khaki);font-weight:600;">Figshealthinsurance@gmail.com</a></div><div style="margin-top:20px;"><div class="footer__heading">Legal</div><ul class="footer__links"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div></div></div><div class="footer__bottom"><span>&copy; 2026 Figueroa Family Insurance. A DBA of O7Carrera LLC.</span><span>Created by <a href="https://onyxxmediagroup.com" style="color:var(--brass-light);">Onyxx Media Group</a></span></div></div></footer>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Figueroa Family Insurance</h3>
+        <p>Veteran-owned health insurance advisory helping individuals and families access underwritten plans with lower premiums, better coverage, and nationwide PPO access. A DBA of O7Carrera LLC.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/figshealthinsurance" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+          <a href="https://www.facebook.com/dalifigueroa" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:8132709076">(813) 270-9076</a>
+        <a href="mailto:Figshealthinsurance@gmail.com">Figshealthinsurance@gmail.com</a>
+        <span style="display:block;padding:5px 0;font-size:14px;font-weight:300;">Odessa, FL 33556</span>
+        <div style="margin-top:20px;">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Figueroa Family Insurance. A DBA of O7Carrera LLC.</span>
+      <span>Created by <a href="https://onyxxmediagroup.com" style="color:var(--gold);">Onyxx Media Group</a></span>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
