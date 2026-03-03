@@ -242,9 +242,9 @@ nav.scrolled {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(255, 255, 255, 0.45) 50%,
-    rgba(255, 255, 255, 0.65) 100%
+    rgba(255, 255, 255, 0.88) 0%,
+    rgba(255, 255, 255, 0.82) 50%,
+    rgba(255, 255, 255, 0.92) 100%
   );
   z-index: 1;
 }
@@ -303,7 +303,7 @@ nav.scrolled {
 .hero-sub {
   font-size: 17px;
   line-height: 1.7;
-  color: rgba(27, 46, 32, 0.75);
+  color: rgba(27, 46, 32, 0.85);
   font-weight: 300;
   max-width: 500px;
   margin: 0 auto 44px;
