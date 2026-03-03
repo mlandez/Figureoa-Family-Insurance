@@ -242,9 +242,9 @@ nav.scrolled {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.88) 0%,
-    rgba(255, 255, 255, 0.82) 50%,
-    rgba(255, 255, 255, 0.92) 100%
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.45) 50%,
+    rgba(0, 0, 0, 0.6) 100%
   );
   z-index: 1;
 }
@@ -292,7 +292,7 @@ nav.scrolled {
   font-size: clamp(48px, 5.5vw, 76px);
   font-weight: 500;
   line-height: 1.08;
-  color: var(--deep-green);
+  color: #fff;
   margin-bottom: 28px;
   animation: fadeUp 1s ease 0.4s both;
 }
@@ -303,7 +303,7 @@ nav.scrolled {
 .hero-sub {
   font-size: 17px;
   line-height: 1.7;
-  color: rgba(27, 46, 32, 0.85);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
   max-width: 500px;
   margin: 0 auto 44px;
@@ -342,19 +342,19 @@ nav.scrolled {
   box-shadow: 0 8px 25px rgba(205, 155, 74, 0.25);
 }
 .btn-secondary {
-  color: var(--deep-green);
+  color: rgba(255, 255, 255, 0.9);
   padding: 15px 32px;
   border-radius: 6px;
   font-size: 14.5px;
   font-weight: 400;
   letter-spacing: 0.3px;
   transition: all 0.35s ease;
-  border: 1px solid rgba(27, 46, 32, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .btn-secondary:hover {
-  color: var(--deep-green);
-  border-color: rgba(27, 46, 32, 0.5);
-  background: rgba(27, 46, 32, 0.05);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
 }
 .btn-outline {
   display: inline-flex;
