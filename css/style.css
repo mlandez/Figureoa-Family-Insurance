@@ -2320,4 +2320,54 @@ footer {
   .tab-switcher { width: 100%; justify-content: center; }
   .tab-btn { padding: 10px 20px; font-size: 13px; }
   .values-grid { grid-template-columns: 1fr; }
+  .hero { min-height: auto; }
+  .hero-badge { margin-bottom: 20px; }
+  .hero-actions { flex-wrap: wrap; justify-content: center; }
+  .stat-value { font-size: 24px; }
+  .stat-item { padding: 32px 12px; }
+  .nav-toggle { padding: 12px; }
+  .footer-socials a { width: 40px; height: 40px; }
+  .blog-featured__content { padding: 24px 20px; }
+  .blog-card__body { padding: 16px 16px 20px; }
+  .testimonial-card { padding: 32px 24px; }
+  .testimonial-quote { font-size: 18px; }
+  .comparison-card { padding: 28px 20px; }
+  .pricing-card { padding: 32px 24px; }
+  .contact-form { padding: 32px 20px; }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea { padding: 15px 18px; }
+  .btn-primary, .btn-outline, .btn-white, .btn-ghost, .btn-secondary {
+    padding: 14px 28px;
+    font-size: 13px;
+  }
+  .process-step { padding: 0 12px; }
+  .process-num { width: 44px; height: 44px; font-size: 13px; }
+  .difference-text h2 { font-size: 28px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; gap: 24px; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+  .page-hero h1 { font-size: 30px; }
+  .section-title { font-size: 28px; }
+  .stat-value { font-size: 28px; }
+  .hero { padding: 90px 16px 48px; }
+  .section { padding: 48px 16px; }
+  .page-hero { padding: 110px 16px 40px; }
+  .cta-banner { margin: 0 8px; padding: 48px 16px; }
+  footer { padding: 24px 16px 20px; }
+  .blog-featured__content { padding: 20px 16px; }
+  .nav-cta { display: none; }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
