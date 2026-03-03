@@ -214,7 +214,7 @@ nav.scrolled {
    ============================================ */
 .hero {
   min-height: 100vh;
-  background: #FFFFFF;
+  background: #1B2E20;
   position: relative;
   display: flex;
   align-items: center;
@@ -224,9 +224,27 @@ nav.scrolled {
   border-bottom: 1px solid rgba(205, 155, 74, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
-.hero::before,
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/hero-consultation.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 .hero::after {
-  display: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(27, 46, 32, 0.82) 0%,
+    rgba(27, 46, 32, 0.72) 50%,
+    rgba(27, 46, 32, 0.88) 100%
+  );
+  z-index: 1;
 }
 
 .hero-grain {
@@ -272,7 +290,7 @@ nav.scrolled {
   font-size: clamp(48px, 5.5vw, 76px);
   font-weight: 500;
   line-height: 1.08;
-  color: var(--deep-green);
+  color: #fff;
   margin-bottom: 28px;
   animation: fadeUp 1s ease 0.4s both;
 }
@@ -283,7 +301,7 @@ nav.scrolled {
 .hero-sub {
   font-size: 17px;
   line-height: 1.7;
-  color: rgba(27, 46, 32, 0.65);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
   max-width: 500px;
   margin: 0 auto 44px;
@@ -322,19 +340,19 @@ nav.scrolled {
   box-shadow: 0 8px 25px rgba(205, 155, 74, 0.25);
 }
 .btn-secondary {
-  color: var(--deep-green);
+  color: rgba(255, 255, 255, 0.8);
   padding: 15px 32px;
   border-radius: 6px;
   font-size: 14.5px;
   font-weight: 400;
   letter-spacing: 0.3px;
   transition: all 0.35s ease;
-  border: 1px solid rgba(27, 46, 32, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .btn-secondary:hover {
-  color: var(--deep-green);
-  border-color: rgba(27, 46, 32, 0.5);
-  background: rgba(27, 46, 32, 0.05);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
 }
 .btn-outline {
   display: inline-flex;
