@@ -479,14 +479,15 @@ nav.scrolled {
   position: relative;
   transition: background 0.3s;
 }
-.stat-item:nth-child(-n+2) {
-  background: rgba(255, 255, 255, 0.05);
+.stat-item:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.03);
 }
 .stat-item:hover { background: rgba(255,255,255,0.08); }
 .stat-value {
   font-family: var(--serif);
   font-size: 34px;
   font-weight: 600;
+  font-style: normal;
   color: #fff;
   margin-bottom: 6px;
   white-space: nowrap;
