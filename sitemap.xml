@@ -1,177 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/index.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Main Pages -->
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/services.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/services</loc>
     <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/about.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/about</loc>
     <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/careers</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://figueroa-family-insurance.vercel.app/contact</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://figueroa-family-insurance.vercel.app/landing</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://figueroa-family-insurance.vercel.app/blog</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog Posts -->
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/careers.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-5-questions-health-plan</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/contact.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-7-ways-lower-premium</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/privacy.html</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://figueroa-family-insurance.vercel.app/terms.html</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-underwritten-vs-aca.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-beginners-guide-hsa</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-5-questions-health-plan.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-claim-denied-what-to-do</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-veterans-military-health-insurance.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-copays-coinsurance-deductibles</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-premiums-rising.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-gig-economy-health-insurance</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-what-is-medical-underwriting.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-health-insurance-newlyweds</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-maximize-ppo-benefits.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-health-insurance-trends-2026</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-individual-vs-family-plans.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-individual-vs-family-plans</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-read-summary-of-benefits.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-maximize-ppo-benefits</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-beginners-guide-hsa.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-navigating-va-healthcare</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-copays-coinsurance-deductibles.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-premiums-rising</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-7-ways-lower-premium.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-prepare-open-enrollment</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-prepare-open-enrollment.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-read-summary-of-benefits</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-claim-denied-what-to-do.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-short-term-health-plans</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-tricare-vs-private-insurance.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-tricare-vs-private-insurance</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-health-insurance-trends-2026.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-underwritten-vs-aca</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-gig-economy-health-insurance.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-veterans-military-health-insurance</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-short-term-health-plans.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-veterans-save-health-insurance</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-veterans-save-health-insurance.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-what-is-medical-underwriting</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-health-insurance-newlyweds.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/blog-when-to-add-child-health-plan</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
+  <!-- Legal Pages -->
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-when-to-add-child-health-plan.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/privacy</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
+
   <url>
-    <loc>https://figueroa-family-insurance.vercel.app/blog-navigating-va-healthcare.html</loc>
+    <loc>https://figueroa-family-insurance.vercel.app/terms</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
+
 </urlset>

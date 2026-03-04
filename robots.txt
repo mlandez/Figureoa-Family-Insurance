@@ -1,5 +1,45 @@
+# Figueroa Family Insurance - Robots.txt
+# Allow all crawlers
+
+# Default rule for all crawlers
 User-agent: *
 Allow: /
-Disallow: /landing.html
 
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap
 Sitemap: https://figueroa-family-insurance.vercel.app/sitemap.xml
